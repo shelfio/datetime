@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const pkg = require('./package');
-const baseConfig = require('../../webpack-base.config');
+const baseConfig = require('./webpack-base.config');
 
 const files = fs.readdirSync('./src').filter(file => file.includes('.ts'));
 const methods = files.reduce((accumulator, file) => {

@@ -14,8 +14,9 @@
     "lib"
   ],
   "scripts": {
+    "analyze-bundle": "ANALYZE=true yarn build && webpack-bundle-analyzer stats.json",
     "build": "rm -rf lib/ && yarn build:types && yarn build:code",
-    "build:code": "babel src --out-dir lib --ignore '**/*.test.ts' --extensions '.ts' && find ./lib -name '*.test.d.ts' -delete",
+    "build:code": "NODE_ENV=production webpack",
     "build:types": "tsc --emitDeclarationOnly --declaration --isolatedModules false --declarationDir lib",
     "coverage": "yarn test --coverage",
     "lint": "yarn lint:ci --fix",
@@ -51,12 +52,18 @@
     "@types/jest": "29.2.0",
     "@types/lodash": "4.14.177",
     "@types/node": "16",
+    "babel-loader": "^9.0.1",
+    "babel-preset-minify": "0.5.2",
     "eslint": "8.26.0",
     "husky": "8.0.1",
     "jest": "29.2.2",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
-    "typescript": "4.8.4"
+    "typescript": "4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-bundle-analyzer": "^4.7.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-node-externals": "^3.0.0"
   },
   "engines": {
     "node": ">=16"
