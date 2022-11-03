@@ -66,6 +66,10 @@
     "webpack-cli": "^4.10.0",
     "webpack-node-externals": "^3.0.0"
   },
+  "peerDependencies": {
+    "@shelf/types": "16.x.x",
+    "dayjs": "1.x.x"
+  },
   "engines": {
     "node": ">=16"
   },
