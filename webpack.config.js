@@ -23,5 +23,5 @@ module.exports = {
     path: path.resolve(__dirname, 'lib'),
     ...baseConfig.output,
   },
-  externals: [nodeExternals({modulesDir: '../../node_modules'})],
+  externals: [nodeExternals({modulesDir: './node_modules'})],
 };
