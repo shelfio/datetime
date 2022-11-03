@@ -2,5 +2,16 @@
   "root": true,
   "extends": [
     "@shelf/eslint-config/typescript"
-  ]
+  ],
+  "overrides": [
+      {
+        "files": ["jest.config.js", "webpack-base.config.js"],
+        "rules": {
+          "@typescript-eslint/no-var-requires": "warn"
+        }
+      }
+  ],
+  "rules": {
+    "complexity": 0
+  }
 }
