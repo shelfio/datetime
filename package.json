@@ -48,7 +48,6 @@
     "@shelf/eslint-config": "2.22.3",
     "@shelf/prettier-config": "1.0.0",
     "@shelf/tsconfig": "0.0.9",
-    "@shelf/types": "16.8.6",
     "@types/jest": "29.2.0",
     "@types/lodash": "4.14.177",
     "@types/node": "16",
@@ -67,7 +66,6 @@
     "webpack-node-externals": "^3.0.0"
   },
   "peerDependencies": {
-    "@shelf/types": "16.x.x",
     "dayjs": "1.x.x"
   },
   "engines": {
