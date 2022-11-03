@@ -1431,10 +1431,10 @@
   resolved "https://registry.yarnpkg.com/@shelf/tsconfig/-/tsconfig-0.0.9.tgz#5a401ede2b414598a8d7441f012fb4719c30c8f0"
   integrity sha512-qsXCISwaZkQ1o748wxQm7xM/Ur9pFrcksRGFRI4JTbd7qgEPnlxYZo5ifuYC77gPtDp4QWYX3giyr0J1yuVXIg==
 
-"@shelf/types@16.8.5":
-  version "16.8.5"
-  resolved "https://registry.yarnpkg.com/@shelf/types/-/types-16.8.5.tgz#cedf7d7eae9aa8d81cfebe6a2dcbbedda2abcd5f"
-  integrity sha512-gJYlK55HKoqi2/IuyQsVQn9/YtrMfGgBuTGpWXpef7neiL3+kk32b8zuN/j8u0jhQ8C70nGOdOYAdFuiHIl2Rw==
+"@shelf/types@16.8.6":
+  version "16.8.6"
+  resolved "https://registry.yarnpkg.com/@shelf/types/-/types-16.8.6.tgz#6a479c1e21dd6ba9199887ec07fb752af9056cab"
+  integrity sha512-CIppM1APWvz+XI+/oukgWFkbb7rA4PfCaGGXFSWtNpfKN8lM6/obE7ChtI0RK1vOzSwlk/jb9GjlulQNfGyIgQ==
 
 "@sinclair/typebox@^0.24.1":
   version "0.24.51"
