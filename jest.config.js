@@ -1,8 +1,7 @@
-const jestCommon = require('../../jest.config');
-
 module.exports = {
-  ...jestCommon,
-  setupFilesAfterEnv: [],
+  testEnvironment: 'jsdom',
+  coverageReporters: ['clover', 'text'],
+  modulePathIgnorePatterns: ['__test__'],
   coveragePathIgnorePatterns: ['types/index.ts'],
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
   coverageThreshold: {
