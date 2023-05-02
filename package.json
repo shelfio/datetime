@@ -1,6 +1,6 @@
 {
   "name": "@shelf/datetime",
-  "version": "0.2.44",
+  "version": "0.2.45",
   "description": "Shelf dates library",
   "license": "MIT",
   "author": {
@@ -69,7 +69,7 @@
     "dayjs": "1.x.x"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=14"
   },
   "publishConfig": {
     "access": "public"
