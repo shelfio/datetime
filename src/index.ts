@@ -37,6 +37,7 @@ import isSameDay from './isSameDay';
 import setDate from './setDate';
 import getDate from './getDate';
 import getFullDate from './getFullDate';
+import getDatePeriods from './getDatePeriods';
 import getShortDate from './getShortDate';
 import getShortMonthDayYearDate from './getShortMonthDayYearDate';
 import getDateWithCustomFormat from './getDateWithCustomFormat';
@@ -88,6 +89,7 @@ export {
   setDate,
   getDate,
   getFullDate,
+  getDatePeriods,
   getShortDate,
   getShortMonthDayYearDate,
   getDateWithCustomFormat,
