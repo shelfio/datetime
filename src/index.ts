@@ -48,6 +48,7 @@ import getTimeFormatTemplates from './getTimeFormatTemplates';
 import startOfNextWeek from './startOfNextWeek';
 import endOfNextWeek from './endOfNextWeek';
 import setGlobalLocale from './setGlobalLocale';
+import utcOffset from './utcOffset';
 
 export {
   addMonths,
@@ -100,4 +101,5 @@ export {
   startOfNextWeek,
   endOfNextWeek,
   setGlobalLocale,
+  utcOffset,
 };
