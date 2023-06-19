@@ -1,8 +1,7 @@
 import dayjs from 'dayjs';
-import {isString} from 'lodash';
 
 export default (date: string | Date): string => {
-  if (isString(date)) {
+  if (typeof date === 'string') {
     return date.slice(23);
   }
 
