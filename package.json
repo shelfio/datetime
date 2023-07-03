@@ -39,7 +39,7 @@
   },
   "prettier": "@shelf/prettier-config",
   "dependencies": {
-    "dayjs": "1.11.8"
+    "dayjs": "1.11.9"
   },
   "devDependencies": {
     "@babel/cli": "7.22.5",
