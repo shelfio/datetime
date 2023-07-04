@@ -27,7 +27,7 @@
     "lib"
   ],
   "scripts": {
-    "analyze-bundle": "ANALYZE=true yarn build && webpack-bundle-analyzer stats.json",
+    "analyze-bundle": "yarn build && size-limit --why",
     "build": "rm -rf lib/ && tsc",
     "coverage": "yarn test --coverage",
     "lint": "yarn lint:ci --fix",
