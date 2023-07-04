@@ -34,7 +34,7 @@
     "lint:ci": "eslint . --ext .js,.ts,.json",
     "lint:size": "size-limit",
     "prepack": "yarn build",
-    "test": "TZ=UTC jest src",
+    "test": "TZ=UTC jest",
     "type-check": "tsc --noEmit"
   },
   "lint-staged": {
