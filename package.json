@@ -11,22 +11,24 @@
     "day.js",
     "day"
   ],
+  "sideEffects": [
+    "lib/utils/importLocales.js"
+  ],
+  "type": "module",
   "license": "MIT",
   "author": {
     "name": "Shelf",
     "email": "vlad@shelf.io",
     "url": "https://shelf.io"
   },
-  "main": "lib/index.js",
+  "exports": "./lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
     "analyze-bundle": "ANALYZE=true yarn build && webpack-bundle-analyzer stats.json",
-    "build": "rm -rf lib/ && yarn build:types && yarn build:code",
-    "build:code": "NODE_ENV=production webpack",
-    "build:types": "tsc --emitDeclarationOnly --declaration --isolatedModules false --declarationDir lib",
+    "build": "rm -rf lib/ && tsc",
     "coverage": "yarn test --coverage",
     "lint": "yarn lint:ci --fix",
     "lint:ci": "eslint . --ext .js,.ts,.json",
@@ -77,7 +79,7 @@
     "webpack-node-externals": "^3.0.0"
   },
   "peerDependencies": {
-    "dayjs": "1.x.x"
+    "dayjs": "~1.11.0"
   },
   "engines": {
     "node": ">=14"
@@ -88,11 +90,12 @@
   "size-limit": [
     {
       "path": "lib/index.js",
-      "limit": "3.1 KB"
+      "limit": "2 KB"
     },
     {
-      "path": "lib/addMonths.js",
-      "limit": "632 B"
+      "path": "lib/index.js",
+      "import": "{addMonths}",
+      "limit": "0.3 KB"
     }
   ]
 }
