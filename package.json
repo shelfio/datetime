@@ -60,7 +60,6 @@
     "@size-limit/esbuild-why": "8.2.6",
     "@size-limit/preset-small-lib": "8.2.6",
     "@types/jest": "29.5.2",
-    "@types/lodash": "4.14.195",
     "@types/node": "16",
     "babel-loader": "^9.0.1",
     "babel-preset-minify": "0.5.2",
@@ -89,7 +88,7 @@
   "size-limit": [
     {
       "path": "lib/index.js",
-      "limit": "4.3 KB"
+      "limit": "3.1 KB"
     },
     {
       "path": "lib/addMonths.js",
