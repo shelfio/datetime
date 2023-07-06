@@ -19,6 +19,7 @@ draft.ts
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/shelf
+.idea/**/conventionalCommit.xml
 
 # File-based project format
 *.iws
