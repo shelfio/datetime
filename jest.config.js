@@ -1,9 +1,8 @@
-module.exports = {
-  testEnvironment: 'jsdom',
+/** @type {import('jest').Config} */
+const config = {
   coverageReporters: ['clover', 'text'],
-  modulePathIgnorePatterns: ['__test__'],
-  coveragePathIgnorePatterns: ['types/index.ts'],
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
+  preset: 'ts-jest/presets/default-esm',
   coverageThreshold: {
     global: {
       branches: 100,
@@ -13,3 +12,4 @@ module.exports = {
     },
   },
 };
+export default config;

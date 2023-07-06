@@ -1,21 +1,19 @@
 import dayjs from 'dayjs';
-import localeData from 'dayjs/plugin/localeData';
-import times from 'lodash/times';
-import compact from 'lodash/compact';
+import localeDataPlugin from 'dayjs/plugin/localeData';
 
-dayjs.extend(localeData);
+dayjs.extend(localeDataPlugin);
 
 export default () => {
   const localeData = dayjs().localeData();
 
-  const monthNumbers = times(12, Number);
-  const weekdaysNumbers = times(7, Number);
+  const monthNumbers = Array.from({length: 12}, (_, i) => i);
+  const weekdaysNumbers = Array.from({length: 7}, (_, i) => i);
 
   return {
-    monthsShort: compact(monthNumbers.map(month => localeData.monthsShort()[month])),
-    monthsFull: compact(monthNumbers.map(month => localeData.months()[month])),
-    weekdaysFull: compact(weekdaysNumbers.map(day => localeData.weekdays()[day])),
-    weekdaysAbbreviated: compact(weekdaysNumbers.map(day => localeData.weekdaysShort()[day])),
-    weekdaysShort: compact(weekdaysNumbers.map(day => localeData.weekdaysMin()[day])),
+    monthsShort: monthNumbers.map(month => localeData.monthsShort()[month]),
+    monthsFull: monthNumbers.map(month => localeData.months()[month]),
+    weekdaysFull: weekdaysNumbers.map(day => localeData.weekdays()[day]),
+    weekdaysAbbreviated: weekdaysNumbers.map(day => localeData.weekdaysShort()[day]),
+    weekdaysShort: weekdaysNumbers.map(day => localeData.weekdaysMin()[day]),
   };
 };

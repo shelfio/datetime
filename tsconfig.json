@@ -2,18 +2,8 @@
   "extends": "@shelf/tsconfig/frontend",
   "compilerOptions": {
     "declaration": true,
-    "target": "esnext",
-    "strict": true,
     "noEmit": false,
+    "outDir": "lib"
   },
-  "include": ["src/index.ts"],
-  "exclude": [
-    ".idea",
-    "__test__",
-    ".husky",
-    "**/*.test.*",
-    "./lib",
-    "packages/**/lib",
-    "**/node_modules/**"
-  ]
+  "include": ["src/index.ts"]
 }
