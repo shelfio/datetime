@@ -1,3 +1,4 @@
+import addDays from './addDays';
 import addMonths from './addMonths';
 import isThisMonth from './isThisMonth';
 import parse from './parse';
@@ -52,6 +53,7 @@ import utcOffset from './utcOffset';
 import getUTCOffsetFromDate from './getUTCOffsetFromDate';
 
 export {
+  addDays,
   addMonths,
   isThisMonth,
   parse,
