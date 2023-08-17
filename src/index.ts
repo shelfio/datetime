@@ -51,6 +51,7 @@ import endOfNextWeek from './endOfNextWeek';
 import setGlobalLocale from './setGlobalLocale';
 import utcOffset from './utcOffset';
 import getUTCOffsetFromDate from './getUTCOffsetFromDate';
+import convert12To24h from './convert12To24h';
 
 export {
   addDays,
@@ -106,4 +107,5 @@ export {
   setGlobalLocale,
   utcOffset,
   getUTCOffsetFromDate,
+  convert12To24h,
 };
