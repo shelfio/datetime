@@ -1144,12 +1144,12 @@
   dependencies:
     "@sinonjs/commons" "^2.0.0"
 
-"@size-limit/esbuild-why@8.2.6":
-  version "8.2.6"
-  resolved "https://registry.yarnpkg.com/@size-limit/esbuild-why/-/esbuild-why-8.2.6.tgz#5075c7740cb0324b59d99ce326a4f1c58c00737d"
-  integrity sha512-Zd+24d5RKpB1ow//ICyDHq8BCx9dF5DZ3FyssYFwdZe/ljE1qpXfz8NpEOJCH4fDlSiTSsWmnWYW8VarfsiXEw==
+"@size-limit/esbuild-why@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@size-limit/esbuild-why/-/esbuild-why-9.0.0.tgz#7fd44772a53596c406af4bc60aee6537a55da401"
+  integrity sha512-p683YMq8Nk9pGDAt6zR09g5avm8tDIBZSd/xwiK9c23abiJK/kvD2Gowdj3PFdGLt73TFY5CW/kc2oaJwU+WSQ==
   dependencies:
-    esbuild-visualizer "^0.4.0"
+    esbuild-visualizer "^0.4.1"
     open "^8.4.2"
 
 "@size-limit/esbuild@8.2.6":
@@ -2258,7 +2258,7 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-esbuild-visualizer@^0.4.0:
+esbuild-visualizer@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/esbuild-visualizer/-/esbuild-visualizer-0.4.1.tgz#d30acb1de2e3edf6ce72383cc8f65b07be656c4b"
   integrity sha512-5XI3unzqPr3xqfzR/mzK3LhoAJs3FQhiIXBsKJ3Oh6CjyjuXz6HVmhJMoisrcpeTZip65fR54Dk53MZncA0AUQ==
