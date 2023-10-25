@@ -75,7 +75,7 @@
   "size-limit": [
     {
       "path": "lib/index.js",
-      "limit": "11.7 KB"
+      "limit": "11.04 KB"
     },
     {
       "path": "lib/index.js",
