@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
-import type {DistanceOptions} from './types';
+import relativeTime from 'dayjs/plugin/relativeTime.js';
+import type {DistanceOptions} from './types/index.js';
 
 dayjs.extend(relativeTime);
 

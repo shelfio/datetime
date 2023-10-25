@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
+import relativeTime from 'dayjs/plugin/relativeTime.js';
 import type {ConfigType} from 'dayjs';
-import type {DateRange} from './types';
+import type {DateRange} from './types/index.js';
 
 dayjs.extend(relativeTime);
 

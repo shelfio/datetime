@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import localeDataPlugin from 'dayjs/plugin/localeData';
+import localeDataPlugin from 'dayjs/plugin/localeData.js';
 
 dayjs.extend(localeDataPlugin);
 

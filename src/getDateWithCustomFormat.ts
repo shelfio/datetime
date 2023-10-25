@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
-import localizedFormat from 'dayjs/plugin/localizedFormat';
-import advancedFormat from 'dayjs/plugin/advancedFormat';
-import isDate from './isDate';
+import localizedFormat from 'dayjs/plugin/localizedFormat.js';
+import advancedFormat from 'dayjs/plugin/advancedFormat.js';
+import isDate from './isDate.js';
 
 dayjs.extend(localizedFormat);
 dayjs.extend(advancedFormat);

@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
-import localizedFormat from 'dayjs/plugin/localizedFormat';
-import advancedFormat from 'dayjs/plugin/advancedFormat';
+import localizedFormat from 'dayjs/plugin/localizedFormat.js';
+import advancedFormat from 'dayjs/plugin/advancedFormat.js';
 
 dayjs.extend(localizedFormat);
 dayjs.extend(advancedFormat);

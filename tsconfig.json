@@ -3,7 +3,9 @@
   "compilerOptions": {
     "declaration": true,
     "noEmit": false,
-    "outDir": "lib"
+    "outDir": "lib",
+    "moduleResolution": "nodenext",
+    "module": "Node16"
   },
   "include": ["src/index.ts"]
 }
