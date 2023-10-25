@@ -1,4 +1,3 @@
-import 'dayjs/locale/de';
-import 'dayjs/locale/es';
-import 'dayjs/locale/uk';
-import 'dayjs/locale/ru';
+import 'dayjs/locale/de.js';
+import 'dayjs/locale/es.js';
+import 'dayjs/locale/uk.js';
