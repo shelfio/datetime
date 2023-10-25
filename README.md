@@ -1,6 +1,6 @@
 # Shelf/datetime [![CircleCI](https://app.circleci.com/pipelines/github/shelfio/datetime.svg?style=svg)](https://app.circleci.com/pipelines/github/shelfio/datetime)![](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
 
-> Shelf dates library
+> Shelf dates library. Wrapper on [dayjs](https://day.js.org/) with more of date-fns API
 
 ## Install
 
