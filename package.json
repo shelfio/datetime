@@ -44,7 +44,7 @@
   },
   "prettier": "@shelf/prettier-config",
   "dependencies": {
-    "dayjs": "1.11.9"
+    "dayjs": "1.11.10"
   },
   "devDependencies": {
     "@babel/core": "7.23.2",
@@ -64,9 +64,6 @@
     "ts-jest": "29.1.1",
     "typescript": "5.1.6"
   },
-  "peerDependencies": {
-    "dayjs": "~1.11.0"
-  },
   "engines": {
     "node": ">=14"
   },
@@ -76,12 +73,12 @@
   "size-limit": [
     {
       "path": "lib/index.js",
-      "limit": "2.1 KB"
+      "limit": "11.7 KB"
     },
     {
       "path": "lib/index.js",
       "import": "{addMonths}",
-      "limit": "0.3 KB"
+      "limit": "3.33 KB"
     }
   ]
 }
