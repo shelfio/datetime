@@ -1,5 +1,6 @@
 export {default as addDays} from './addDays.js';
 export {default as addMonths} from './addMonths.js';
+export {default as addMinutes} from './addMinutes.js';
 export {default as isThisMonth} from './isThisMonth.js';
 export {default as parse} from './parse.js';
 export {default as parseISO} from './parseISO.js';
