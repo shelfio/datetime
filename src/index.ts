@@ -18,6 +18,7 @@ export {default as setMinutes} from './setMinutes.js';
 export {default as subDays} from './subDays.js';
 export {default as subWeeks} from './subWeeks.js';
 export {default as subMinutes} from './subMinutes.js';
+export {default as subSeconds} from './subSeconds.js';
 export {default as subMonths} from './subMonths.js';
 export {default as endOfTomorrow} from './endOfTomorrow.js';
 export {default as endOfDay} from './endOfDay.js';
