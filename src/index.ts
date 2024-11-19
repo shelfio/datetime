@@ -54,3 +54,5 @@ export {default as setGlobalLocale} from './setGlobalLocale.js';
 export {default as utcOffset} from './utcOffset.js';
 export {default as getUTCOffsetFromDate} from './getUTCOffsetFromDate.js';
 export {default as convert12To24h} from './convert12To24h.js';
+export {default as addYears} from './addYears.js';
+export {default as isBetween} from './isBetween.js';

@@ -1,4 +1,6 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
+process.env.TZ = 'UTC';
+
 const config = {
   coverageReporters: ['clover', 'text'],
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
