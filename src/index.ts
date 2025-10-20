@@ -56,3 +56,5 @@ export {default as getUTCOffsetFromDate} from './getUTCOffsetFromDate.js';
 export {default as convert12To24h} from './convert12To24h.js';
 export {default as addYears} from './addYears.js';
 export {default as isBetween} from './isBetween.js';
+export {DATE_FORMATS} from './utils/formats.js';
+export type {DateFormatKey} from './utils/formats.js';
