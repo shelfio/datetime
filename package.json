@@ -79,5 +79,9 @@
       "import": "{addMonths}",
       "limit": "3.33 KB"
     }
-  ]
+  ],
+  "lint-staged": {
+    "*.{html,md,yml}": "prettier --write",
+    "*.{js,ts,json}": "eslint --fix"
+  }
 }
