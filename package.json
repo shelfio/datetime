@@ -39,11 +39,6 @@
     "test": "jest",
     "type-check": "tsc --noEmit"
   },
-  "lint-staged": {
-    "*.{html,md,yml}": "prettier --write",
-    "*.{js,ts,json}": "eslint --fix",
-    ".circleci/config.yml": ".husky/validate-circleci-config.sh"
-  },
   "prettier": "@shelf/prettier-config",
   "eslintConfig": {
     "extends": "@shelf/eslint-config/typescript"
@@ -84,5 +79,9 @@
       "import": "{addMonths}",
       "limit": "3.33 KB"
     }
-  ]
+  ],
+  "lint-staged": {
+    "*.{html,md,yml}": "prettier --write",
+    "*.{js,ts,json}": "eslint --fix"
+  }
 }
