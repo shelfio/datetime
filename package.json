@@ -47,7 +47,7 @@
     "dayjs": "1.11.13"
   },
   "devDependencies": {
-    "@shelf/eslint-config": "3.15.1",
+    "@shelf/eslint-config": "5.3.2",
     "@shelf/prettier-config": "1.0.0",
     "@shelf/tsconfig": "0.1.0",
     "@size-limit/esbuild-why": "11.2.0",
