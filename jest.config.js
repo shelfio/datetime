@@ -3,9 +3,13 @@ process.env.TZ = 'UTC';
 
 const config = {
   coverageReporters: ['clover', 'text'],
-  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
-  preset: 'ts-jest/presets/default-esm',
-  resolver: 'ts-jest-resolver',
+  transform: {
+    '^.+\\.(t|j)sx?$': '@swc/jest',
+  },
+  // Allow TS sources that use `.js` extensions in ESM-style imports to resolve to `.ts` files in tests
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1',
+  },
   coverageThreshold: {
     global: {
       branches: 100,
