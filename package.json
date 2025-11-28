@@ -47,8 +47,8 @@
     "@shelf/eslint-config": "5.3.4",
     "@shelf/prettier-config": "1.0.0",
     "@shelf/tsconfig": "0.1.0",
-    "@size-limit/esbuild-why": "11.2.0",
-    "@size-limit/preset-small-lib": "11.2.0",
+    "@size-limit/esbuild-why": "12.0.0",
+    "@size-limit/preset-small-lib": "12.0.0",
     "@swc/core": "1.15.3",
     "@swc/jest": "0.2.39",
     "@types/jest": "30.0.0",
@@ -57,7 +57,7 @@
     "jest": "30.2.0",
     "lint-staged": "16.2.7",
     "prettier": "3.6.2",
-    "size-limit": "11.2.0",
+    "size-limit": "12.0.0",
     "typescript": "5.9.3"
   },
   "engines": {
