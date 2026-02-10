@@ -4,8 +4,9 @@
     "declaration": true,
     "noEmit": false,
     "outDir": "lib",
+    "jsx": "react-jsx",
     "moduleResolution": "nodenext",
     "module": "Node16"
   },
-  "include": ["src/index.ts"]
+  "include": ["src/index.ts", "src/react/index.ts"]
 }
