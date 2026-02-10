@@ -25,6 +25,25 @@ setGlobalLocale('en');
 formatDistance(new Date(1986, 3, 4, 10, 32, 0), new Date(1986, 3, 4, 10, 32, 20)); // a few seconds ago
 ```
 
+## React components
+
+Usage:
+
+```jsx
+import {FormatTime, RelatimeTime} from '@shelf/datetime/react';
+
+<FormatTime date={new Date()} />;
+<FormatTime date="2025-01-02T03:04:05Z" />;
+<FormatTime date={new Date()} format="YYYY-MM-DD HH:mm" className="text-xs" />;
+
+<RelatimeTime date={new Date(Date.now() - 60_000)} />;
+<RelatimeTime date="2025-01-02T03:03:05Z" addSuffix />;
+
+<FormatTime date={new Date()} asChild className="text-sm">
+  <time data-testid="time" />
+</FormatTime>;
+```
+
 ## Publish
 
 ```sh
