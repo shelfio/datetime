@@ -6,6 +6,8 @@ const config = {
   transform: {
     '^.+\\.(t|j)sx?$': '@swc/jest',
   },
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
   // Allow TS sources that use `.js` extensions in ESM-style imports to resolve to `.ts` files in tests
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1',
