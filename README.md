@@ -48,8 +48,8 @@ import {FormatTime, RelatimeTime} from '@shelf/datetime/react';
 
 ```sh
 $ git checkout master
-$ yarn version
-$ yarn publish
+$ pnpm version
+$ pnpm publish
 $ git push origin master --tags
 ```
 
