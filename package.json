@@ -51,7 +51,7 @@
   "prettier": "@shelf/prettier-config",
   "dependencies": {
     "@radix-ui/react-slot": "1.2.4",
-    "dayjs": "1.11.19"
+    "dayjs": "1.11.21"
   },
   "peerDependencies": {
     "react": ">=18.2.0 <20"
