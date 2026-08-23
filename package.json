@@ -37,13 +37,13 @@
     "lib"
   ],
   "scripts": {
-    "analyze-bundle": "yarn build && size-limit --why",
+    "analyze-bundle": "pnpm build && size-limit --why",
     "build": "rm -rf lib/ && tsc",
-    "coverage": "yarn test --coverage",
-    "lint": "yarn lint:ci --fix",
+    "coverage": "pnpm test --coverage",
+    "lint": "pnpm lint:ci --fix",
     "lint:ci": "eslint .",
     "lint:size": "size-limit",
-    "prepack": "yarn build",
+    "prepack": "pnpm build",
     "prepare": "husky",
     "test": "jest",
     "type-check": "tsc --noEmit"
@@ -86,7 +86,7 @@
     "typescript": "5.9.3"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20.19.0"
   },
   "publishConfig": {
     "access": "public"
