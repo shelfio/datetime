@@ -40,15 +40,14 @@
     "analyze-bundle": "pnpm build && size-limit --why",
     "build": "rm -rf lib/ && tsc",
     "coverage": "pnpm test --coverage",
-    "lint": "pnpm lint:ci --fix",
-    "lint:ci": "eslint .",
+    "lint": "oxfmt && eslint . --fix",
+    "lint:ci": "oxfmt --check && eslint .",
     "lint:size": "size-limit",
     "prepack": "pnpm build",
     "prepare": "husky",
     "test": "jest",
     "type-check": "tsc --noEmit"
   },
-  "prettier": "@shelf/prettier-config",
   "dependencies": {
     "@radix-ui/react-slot": "1.2.4",
     "dayjs": "1.11.19"
@@ -63,7 +62,7 @@
   },
   "devDependencies": {
     "@shelf/eslint-config": "7.2.0",
-    "@shelf/prettier-config": "1.0.0",
+    "@shelf/prettier-config": "1.1.1",
     "@shelf/tsconfig": "0.2.0",
     "@size-limit/esbuild-why": "12.0.0",
     "@size-limit/preset-small-lib": "12.0.0",
@@ -79,7 +78,7 @@
     "jest": "30.2.0",
     "jest-environment-jsdom": "30.2.0",
     "lint-staged": "16.2.7",
-    "prettier": "3.8.1",
+    "oxfmt": "0.64.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "size-limit": "12.0.0",
@@ -108,8 +107,11 @@
     }
   ],
   "lint-staged": {
-    "*.{html,md,yml}": "prettier --write",
-    "*.{js,ts,json}": "eslint --fix"
+    "*.{html,md,yml}": "oxfmt --no-error-on-unmatched-pattern",
+    "*.{js,ts,json}": [
+      "oxfmt --no-error-on-unmatched-pattern",
+      "eslint --fix"
+    ]
   },
   "packageManager": "pnpm@11.18.0"
 }
