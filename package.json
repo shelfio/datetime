@@ -62,9 +62,9 @@
     }
   },
   "devDependencies": {
-    "@shelf/eslint-config": "7.1.0",
+    "@shelf/eslint-config": "7.2.0",
     "@shelf/prettier-config": "1.0.0",
-    "@shelf/tsconfig": "0.1.0",
+    "@shelf/tsconfig": "0.2.0",
     "@size-limit/esbuild-why": "12.0.0",
     "@size-limit/preset-small-lib": "12.0.0",
     "@swc/core": "1.15.11",
@@ -83,7 +83,7 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "size-limit": "12.0.0",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "engines": {
     "node": ">=20.19.0"
