@@ -1,10 +1,6 @@
 packages:
   - '.'
 
-onlyBuiltDependencies:
-  - esbuild
-  - unrs-resolver
-
 overrides:
   'eslint-plugin-barrel-files>oxc-resolver': 11.19.1
 lockfile: true
