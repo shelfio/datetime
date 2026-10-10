@@ -1,6 +1,6 @@
-/** @type {import('ts-jest').JestConfigWithTsJest} */
 process.env.TZ = 'UTC';
 
+/** @type {import('jest').Config} */
 const config = {
   coverageReporters: ['clover', 'text'],
   transform: {
